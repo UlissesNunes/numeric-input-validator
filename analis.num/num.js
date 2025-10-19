@@ -78,6 +78,9 @@
 
          const apagarSelecao = () => {
              res.innerHTML = ''
+                listaSelect.innerHTML = ''
+                valores.length = 0
+                
 
          }
 
