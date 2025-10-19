@@ -9,24 +9,27 @@
 </head>
 <body>
     <header>
-        <head>
-            <h1>Analisador de números</h1>
-        </head>
+        <img src="" alt="">
+            <h1>AnaliNum</h1>
+    
     </header>
-    <main>
+    <main>   <p>O objetivo aqui é : Você escolhe qualquer intervalo de números e te retornamos  <strong>entre 1 e 150</strong></p>
         <section>
             <div id="num">
-               <p>Número <strong>entre 1 e 150</strong> <input type="number" name="fnumber" id="Fnum">
-               <input type="button" value="Enviar" onclick="enviarNum()"></p>
+             <input type="number" name="fnumber" id="Fnum">
+               <input type="button" value="Enviar" onclick="enviarNum()">
 
-               <p><select name="flista" id="Fcx" size="7"></select></p>
+               <select name="flista" id="Fcx" size="7"></select>
+               <section class="inputs"> 
                <input type="button" value="finalizar" onclick="finalizarSelecao()">
                <input type="button" value="apagar" onclick="apagarSelecao()">
-            </div>
+            </div></section>
             <div id="res">
             </div>
         </section>
+       
     </main>
+    <footer> <p>Feito por @Ulisses</p></footer>
     <script src="num.js"></script>
   
 </body>

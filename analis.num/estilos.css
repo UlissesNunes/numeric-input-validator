@@ -1,24 +1,11 @@
-main {
-    background-color: rgb(19, 44, 69);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    height: 250px;
-    margin: 10px;
-    padding: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
-div#res{
-    background-color: azure;
-    flex: auto;
-    width: 83vw;
-    border: 3px solid rgb(19, 44, 69);
-    
-    
-    
-}
 
 
 body{
@@ -27,16 +14,71 @@ body{
     
 }
 
+header{
+    background-color: rgb(19, 44, 69);
+    text-align: center;
+    padding: 10px;
+    border-bottom: 5px solid rgb(10, 29, 50);
+    
+}
+
+header h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.205);
+}
+
+
+main {
+    background-color: rgb(19, 44, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 450px;
+    width: 90vw;
+    border: 5px solid rgb(10, 29, 50);
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+
+section div#num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 4px;
+    width: 100%;
+    
+}
+
+    
+section .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 10px;
+    width: 100%;
+}
+
+
+div#res{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    padding: 7px;
+    
+    
+}
+
 input{
     flex: auto;
     text-align: center;
     cursor: pointer;
 }
-h1{
-    text-align: center;
-    color:rgb(19, 44, 69);
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.205);
-}
+
 input[type="button"] {
     background-color:  rgb(143, 145, 151);
     color: rgb(22, 49, 77);
@@ -48,8 +90,18 @@ input[type="button"]:hover {
 }
 
 select {
-    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    font-size: 1em;
+    padding: 9px;
+    color: rgb(22, 49, 77);
+    font-weight: bolder;
+    margin: 20px;
 }
+
 p{ text-shadow: 1px 1px rgba(0, 0, 0, 0.205);
 }
 p.p {
@@ -62,13 +114,13 @@ p.p {
     text-align: center;
 }
 
-.footer {
+footer {
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.footer > p {
+footer > p {
     flex: auto;
     color: rgb(22, 49, 77);
     font-weight: 850;
